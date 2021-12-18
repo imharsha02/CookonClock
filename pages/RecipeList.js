@@ -1,7 +1,7 @@
 import { withRouter } from "next/router";
 import {useState, useEffect} from 'react'
 
-
+label: 
 function RecipeList(props) {
     const [res, setRes] = useState({});
     const getData = async() => {
@@ -36,7 +36,7 @@ function RecipeList(props) {
                 </>
             ): (
                 <div>
-                    yo{res.hits&& res.hits.length>0 && res.hits.length }
+                    yo{res.hits&& res.hits.length>0 && res.hits }
                 </div>
             )}
         </>
